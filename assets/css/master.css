@@ -198,3 +198,67 @@ button:nth-of-type(2):hover {
   max-width: 100%;
   height: auto;
 }
+
+.swiper {
+  width: 960px;
+  height: 300px;
+
+  /* margin: 100px 0; */
+}
+
+.swiper-slide {
+  border: 4px #272727 solid;
+}
+
+.grid-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 20px;
+}
+
+/* Estilos dos Cards */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+  }
+}
+
+footer {
+  height: 200px;
+}
